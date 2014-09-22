@@ -1,0 +1,26 @@
+@import url("http://fonts.googleapis.com/css?family=Play");
+svg rect {
+  fill: DodgerBlue;
+}
+rect.highlight {
+  opacity: 0.5;
+}
+#controls {
+  padding-top: 5px;
+  font-family: 'Play';
+}
+button {
+  font-family: 'Play';
+  font-size: 14px;
+  background-color: #ddd;
+  border: 1px solid #777;
+  text-decoration: none;
+  margin: 0 2px;
+}
+#form-delay {
+  display: inline;
+}
+#input-delay {
+  font-family: 'Play';
+  width: 3em;
+}

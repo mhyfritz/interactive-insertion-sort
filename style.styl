@@ -1,0 +1,40 @@
+$font_ = Play
+$font-size = 14px
+
+$font = join(' ', $font_)
+$font-import = join('+', $font_)
+
+join(delim, args)
+  buf = ''
+  for arg, index in args
+    if index
+      buf += delim + arg
+    else
+      buf += arg
+
+@import url(http://fonts.googleapis.com/css?family=$font-import)
+
+svg rect
+  fill DodgerBlue
+
+rect.highlight
+  opacity 0.5
+
+#controls
+  padding-top 5px
+  font-family $font
+
+button
+  font-family $font
+  font-size $font-size
+  background-color #ddd
+  border 1px solid #777
+  text-decoration none
+  margin 0 2px
+
+#form-delay
+  display inline
+
+#input-delay
+  font-family $font
+  width 3em
